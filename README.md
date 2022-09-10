@@ -10,5 +10,6 @@
 start - start bot
 download - dl one link and multi link
 status - bot status
-log -log
+log - log
+
 ```
