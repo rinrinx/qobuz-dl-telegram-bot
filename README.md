@@ -41,3 +41,60 @@ log - log
   7:  24-Bit Hi-Res/Upto 96 kHz
   27: 24-Bit Hi-Res/Upto 192 kHz
 ```
+
+3. **Deploying on VPS Using Docker**
+
+- Start Docker daemon (skip if already running), if installed by snap then use 2nd command:
+    
+        sudo dockerd
+        sudo snap start docker
+
+     Note: If not started or not starting, run the command below then try to start.
+
+        sudo apt install docker.io
+
+- Build Docker image:
+
+        sudo docker build . -t qobuz-dl-bot 
+
+- Run the image:
+
+        sudo docker run qobuz-dl-bot
+
+- To stop the image:
+
+        sudo docker ps
+        sudo docker stop id
+
+- To clear the container:
+
+        sudo docker container prune
+
+- To delete the images:
+
+        sudo docker image prune -a
+
+4. **Deploying on VPS Using docker-compose**
+
+**NOTE**: If you want to use port other than 80, change it in docker-compose.yml
+
+```
+sudo apt install docker-compose
+```
+- Build and run Docker image:
+```
+sudo docker-compose up
+```
+- After editing files with nano for example (nano start.sh):
+```
+sudo docker-compose up --build
+```
+- To stop the image:
+```
+sudo docker-compose stop
+```
+- To run the image:
+```
+sudo docker-compose start
+
+```
