@@ -17,7 +17,7 @@ log - log
 
 2. **Set up config file**
 
-- config.env 
+- config.py
 
 - Fill up variables:
 
@@ -31,6 +31,7 @@ log - log
         - `QOBUZ_MAIL`: qobuz email
         - `QOBUZ_PASS`: qobuz pass
         - `QOBUZ_QUAL`: Quality
+        - `BOT_USERNAME`: Bot username not @
         - `LOG_CHANNEL`: Channel Id -100xxxx
 
 
