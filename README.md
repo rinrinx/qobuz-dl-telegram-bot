@@ -1,7 +1,4 @@
 # qobuz-dl-telegram-bot
- 
-
-## Commands Bot (set through @BotFather)
 
 ## Commands for bot(set through @BotFather)
 
