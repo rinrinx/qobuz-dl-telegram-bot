@@ -13,7 +13,7 @@ log - log
 
  - Clone repo:
 
-        git clone https://github.com/rinrinx/qobuz-dl-telegram-bot
+        git clone https://github.com/qobuz-dl/qobuz-dl-telegram-bot
 
 2. **Set up config file**
 
