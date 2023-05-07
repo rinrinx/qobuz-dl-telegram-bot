@@ -37,20 +37,9 @@ def antiSpam(client: Client, message: Message):
 
     linkler = []
     helpstr = f"""
-  a.) Reply Txt file with links.
+   a.) Reply Txt file with links.
   b.) Or string with spaces after the command.
   c.) Or reply to the links in the sub-lines.
-
-🌿 Quality
-  5:  MP3-320 Kbps
-  6:  CD-16-bit/44,1 kHz
-  7:  24-Bit Hi-Res/Upto 96 kHz
-  27: 24-Bit Hi-Res/Upto 192 kHz
-
-Default Quality: {str(Config.QOBUZ_QUAL)}
-
-<code>/download https://open.qobuz.com/artist/189148</code>
-
 """
     if message.reply_to_message:
         if message.reply_to_message.document:
